@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js",
-	"test": "./mongod"
-  },
+    "start": "node app.js",
+	"start": "./mongod"
+     },
   "author": "Harshit kumar",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +15,5 @@
     "ejs-lint": "^0.3.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.3"
-  }
+     },
 }
