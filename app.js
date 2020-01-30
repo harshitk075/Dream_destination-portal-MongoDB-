@@ -11,7 +11,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 mongoose.set('useUnifiedTopology', true);
 
 //LINKING MONGODB
-mongoose.connect("mongodb://localhost/dstplaces", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/dstplaces",{ useNewUrlParser: true });
 
 //SCHEMA SETUP
 var placeschema = new mongoose.Schema({
@@ -79,6 +79,6 @@ app.get("/index/:id",(req, res)=>{
 });
 	
 //writing server listen route
-app.listen(2323,()=> {
+app.listen(process.env.PORT,()=> {
 	console.log("server started");
 });
